@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Project 3: Personal Portfolio (Free Code Camp)</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+
+
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <body>
+  <div class="top-rect">
+  </div>
+  
+  <header>
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header navbar-title">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" id="navbar-title" href="#top" style="color:#F9EC31">boniverski</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about-me" class="scroll">About Me</a></li>
+            <li><a href="#portfolio" class="scroll">Portfolio</a></li>
+            <li><a href="#contact-form" class="scroll">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <h1 class="text-center" id="top"><mark>boniverski</mark></h1>
+    <p class="text-center">web developer<p>
+  </header>
+  <div id="about-me"></div>
+  <section class="about-me">
+    <div>
+      <h2 class="text-center">About Me</h2>
+      <hr>
+      <div class="avatar">
+        <img class="col-xs-4" src="https://res.cloudinary.com/boniverski/image/upload/v1471948592/2016-07-11_06.18.13_1_2_feljzx.jpg" alt="This is me!">
+      </div>
+      <div>
+        <p class="col-xs-8">Greetings, I'd like to welcome you to my portfolio website! My name is Boško. I'm teaching myself web development, with the accent on front-end. I'm also interested in learning more about UI/UX design.</p>
+      </div>
+      <div class="skills">
+        <img class="col-xs-3" src="http://res.cloudinary.com/boniverski/image/upload/v1471962716/html5.png">
+        <img class="col-xs-3" src="http://res.cloudinary.com/boniverski/image/upload/v1471969001/css3_cjdvs3.png">
+        <img class="col-xs-3" src="http://res.cloudinary.com/boniverski/image/upload/v1471962716/jQurery-1_i2vueb.gif">
+        <img class="col-xs-3" src="http://res.cloudinary.com/boniverski/image/upload/v1471962716/bootstrap-1_odtjkd.png">
+      </div>
+      </div>
+  </section>
+  <section class="portfolio" id="portfolio">
+    <h2 class="text-center">Portfolio</h2>
+    <hr>
+      <div class="portfolio-container">
+        <figure class="project-tab">
+            <a href="https://codepen.io/boniverski/full/ZOPjAz" target="_blank">
+            <img src="http://res.cloudinary.com/boniverski/image/upload/v1472032885/tribute-project_tg9ywz.jpg">
+              <figcaption>
+                <h4>Tribute Page</h4>
+                <p>A simple responsive tribute page as project on Free Code Camp</p>
+              </figcaption>
+            </a>
+        </figure>
+          
+        <figure class="project-tab">
+            <a href="https://codepen.io/boniverski" target="_blank" class=>
+            <img src="http://res.cloudinary.com/boniverski/image/upload/v1472032401/prtfl-img-2_j4z1ar.jpg">
+            <figcaption class="descript">
+              <h4>Project 2</h4>
+              <p>Description</p>
+            </figcaption>
+            </a>
+        </figure>
+          
+        <figure class="project-tab">
+            <a href="https://codepen.io/boniverski" target="_blank">
+            <img src="http://res.cloudinary.com/boniverski/image/upload/v1472032468/prtfl-img-3_rjt2jl.jpg">
+            <figcaption class="descript">
+              <h4>Project 3</h4>
+              <p>Description</p>
+            </figcaption>
+            </a>
+        </figure>
+       </div>
+  </section>
+  <section class="contact-form" id="contact-form">
+    <h2 class="text-center">Contact Me</h2>
+    <hr>
+    <p class="text-center">Want to get in touch?<br>Feel free to contact me for more information! </p>
+    <form class="form-horizontal" role="form" method="post" action="index.php">
+	    <div class="form-group">
+		    <div class="col-sm-12">
+			    <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" value="">
+		    </div>
+	    </div>
+	    <div class="form-group">
+		    <div class="col-sm-12">
+			    <input type="email" class="form-control" id="email" name="email" placeholder="Email" value="">
+		    </div>
+	    </div>
+	    <div class="form-group" id="social">
+		    <div class="col-sm-12">
+			    <textarea class="form-control" rows="4" name="message" placeholder="Message"></textarea>
+		    </div>
+	    </div>
+	    <div class="form-group">
+		    <div class="col-sm-12">
+			    <input id="submit" name="submit" type="submit" value="Send" class="btn btn-default">
+		    </div>
+	    </div>
+	    <div class="form-group">
+		    <div class="col-sm-10 col-sm-offset-2">
+        </div>
+	    </div>
+    </form>
+  </section>
+  <section class="social" id="social">
+    <h2 class="text-center">Social Me</h2>
+    <hr>
+    <ul class="social-links text-center">
+      <li><a class="facebook" href="https://facebook.com/bosko.rabrenovic" title="Facebook" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+      <li><a class="linkedin" href="https://rs.linkedin.com/in/boskorabrenovic" title="LinkedIn" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+      <li><a class="codepen" href="https://codepen.io/boniverski" title="Codepen" target="_blank"><i class="fa fa-codepen"></i></a></li>
+      <li><a class="github" href="https://github.com/boniverski" title="Github" target="_blank"><i class="fa fa-github"></i></a></li>
+      <li><a class="freecodecamp" href="https://www.freecodecamp.com/boniverski" title="Free Code Pen" target="_blank"><i class="fa fa-fire"></i></a></li>
+    </ul>
+    <div class="contribution text-center">
+      <p style="color:dimgrey; font-size:12px"><i class="fa fa-code"></i> by boniverski</p>
+    </div>
+  </section>
+</body>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
