@@ -1,3 +1,5 @@
+/* Base */
+
 h2 {
   font-family: Roboto, Helvetica, sans-serif;
   font-size: 20px;
@@ -14,12 +16,13 @@ hr {
   width: 130px;
 }
 
-@media (min-width: 768px) 
+@media (min-width: 768px)
 {
   h2 {
     font-size: 24px;
   }
 }
+
 /* Header */
 
 .top-rect {
@@ -68,6 +71,7 @@ mark {
   box-shadow: 5px 0 0 #161616, -5px 0 0 #161616;
 
 }
+
 /* Navigation Bar */
 
 #navbar-title {
@@ -132,7 +136,7 @@ section.about-me {
     font-size: 15px;
   }
   .skills {
-    padding: 0 30px; 
+    padding: 0 30px;
   }
   .avatar img {
     margin: 0;
@@ -140,6 +144,7 @@ section.about-me {
     border-style: none;
   }
 }
+
 /* Portfolio */
 
 .portfolio {
@@ -250,6 +255,7 @@ form .form-control {
     margin: 40px auto;
   }
 }
+
 /* Footer - Social */
 
 .social {
