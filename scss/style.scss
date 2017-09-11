@@ -1,0 +1,191 @@
+@import "rwd-framework";
+
+/* Mobile-first CSS style with a responsive framework */
+
+/*----------------------------------------------
+  DEFAULT STYLE
+----------------------------------------------*/
+* {
+  box-sizing: border-box;
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  color: #333;
+}
+
+h2 {
+  margin-bottom: 1.3em;
+  padding-bottom: 0.2em;
+}
+
+p {
+  line-height: 1.6;
+  max-width: 450px;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit
+}
+
+.section__button {
+  background: none;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5em 2em;
+  font-size: 0.9em;
+  outline: none;
+  &--green {
+    border-left: 2px solid #add356;
+    border-right: 2px solid #00dfa6;
+    background-image: -webkit-linear-gradient(left, #add356, #00dfa6), -webkit-linear-gradient(left, #add356, #00dfa6);
+    background-size: 100% 2px;
+    background-position: 0 100%, 0 0;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+  }
+}
+
+/*----------------------------------------------
+  HEADER
+----------------------------------------------*/
+
+/* NAVIGATION BAR */
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 3px 2px rgba(0,0,0,.15);
+  z-index: 2;
+  padding: 1em;
+  ul li img {
+    width: 30px;
+    height: 20px;
+  }
+}
+
+/* HERO SECTION */
+.hero {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #F1F1F1;
+  &__intro {
+    width: 100%;
+    height: 240px;
+    h1 {
+      font-size: 1.7em;
+      margin: 1.5em 0 0.5em 0;
+    }
+    p { font-size: 1.1em; }
+  }
+  &__photo {
+    width: 150px;
+    height: 150px;
+    background: lightgreen;
+    box-shadow: 0 -30px 50px 0 rgba(0,0,0,.1);
+    border: 0.4em solid #FFF;
+    border-radius: 50%;
+  }
+}
+
+.top-rect {
+  background: #2ED3EA;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6C55F7, #2ED3EA);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6C55F7, #2ED3EA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding-top: 550px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 10px 15px 15px rgba(0,0,0,.15);
+    height: 400px;
+    width: 8000px;
+    z-index: 1;
+    bottom: -50%;
+    left: 50%;
+    margin-left: -4000px;
+    transform: rotate(-6deg);
+  }
+}
+
+/*----------------------------------------------
+  ABOUT ME SECTION
+----------------------------------------------*/
+.about-me__wrapper {
+    font-size: 1.1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/*----------------------------------------------
+  PROJECTS SECTION
+----------------------------------------------*/
+.projects__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+figure {
+  display: block;
+  max-width: 100%;
+  background-color: #FFF;
+  -webkit-box-shadow: 0px 2px 46px -6px rgba(133,133,133,0.55);
+  -moz-box-shadow: 0px 2px 46px -6px rgba(133,133,133,0.55);
+  box-shadow: 0px 2px 46px -6px rgba(133,133,133,0.55);
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  &:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  img {
+    vertical-align: middle;
+    max-width: 100%;
+  }
+}
+
+/*----------------------------------------------
+  CONTACT SECTION
+----------------------------------------------*/
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  button  {
+    color: white;
+    background-size: 100%;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 0.9em 3em;
+  }
+}
