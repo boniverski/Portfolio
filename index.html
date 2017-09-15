@@ -2,19 +2,13 @@
 <html>
   <head>
     <meta charset="UTF-8">
-<<<<<<< HEAD
     <title>Boško Rabrenović | Front End Web Developer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-=======
-    <title>boniverski | portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">s
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
->>>>>>> a2c55f1df3f23c8cc11b0af82fd4b2b066ec20b4
     <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto'>
     <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Oswald'>
-    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css'>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/8be9308866.js"></script>
   </head>
   <body>
 
@@ -23,10 +17,10 @@
     <header id="top">
       <nav>
         <ul class="inlined centered">
-          <li><a href="#top"><img src="https://upload.wikimedia.org/wikipedia/de/thumb/2/2f/BR-Logo.svg/2000px-BR-Logo.svg.png" alt="Logo"></a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#top">BR</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -36,11 +30,9 @@
         <h1>Hi, I'm Boško Rabrenović</h1>
         <p>An enthusiastic, driven and detail oriented Front End Web Developer</p>
       </div>
-      <div class="hero__photo"></div>
     </section>
 
-
-    <section class="about-me container">
+    <section id="about" class="about-me container">
       <div class="about-me__wrapper">
         <h2>About</h2>
         <p>Greetings, I'd like to welcome you to my portfolio website! My name is Boško. I'm teaching myself web development, with the accent on front-end. I'm also interested in learning more about UI/UX design.</p>
@@ -48,7 +40,7 @@
       </div>
     </section>
 
-    <section class="projects container">
+    <section id="projects" class="projects container">
       <div class="projects__wrapper">
         <h2>Projects</h2>
         <p>Below are a few of my favorite projects. To see more of my work, check out my GitHub or CodePen.</p>
@@ -60,19 +52,30 @@
       </div>
     </section>
 
-    <section class="contact container">
+    <section id="contact" class="contact container">
       <h2>Contact</h2>
-      <p>I'm avaiable for full-time, part-time or freelance work. If you have an ineresting offer, feel free to email me below.</p>
-      <button class="section__button section__button--green">Email me</button>
+      <p>I'm avaiable for full-time, part-time or freelance work. If you have an interesting offer or if you want to drop some words, feel free to email me.</p>
+      <a href="mailto:bosko.rabrenovic@gmail.com?subject=feedback"><button class="section__button section__button--green">Email me</button></a>
     </section>
 
     <footer>
-        <ul class="inlined centered">
-          <li><a href="#"></a>GitHub</li>
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Medium</a></li>
+      <div class="footer__wrapper">
+        <div class="footer__main">
+          <div class="logo">BR</div>
+          <a class="email" href="mailto:bosko.rabrenovic@gmail.com?subject=feedback">boško [at] gmail dot com</a>
+        </div>
+        <section class="articles">
+          <h4>Latest Articles</h2>
+          <h5><span class="articles__date">August 10, 2017</span> <a href="https://medium.com/@bosko.rabrenovic/first-50-days-summing-up-915c001c591e"><span class="articles__title">First 50 Days: Summing Up</span></a></h4>
+        </section>
+        <ul class="footer__social inlined centered">
+          <li><a href="https://github.com/boniverski" target="_blank" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.behance.net/boniverski" target="_blank" title="Behance"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/boskorabrenovic/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          <li><a href="https://twitter.com/boniverski" target="_blank" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="https://medium.com/@bosko.rabrenovic" target="_blank" title="Medium"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
         </ul>
+      </div>
     </footer>
 
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>

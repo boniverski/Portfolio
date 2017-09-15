@@ -1,4 +1,4 @@
-# My Personal Webpage/Portfolio v2
+# My Personal Webpage and Portfolio (v2 unfinished) 
 
 ### Built as freeCodeCamp's Front End Basic Project
 
