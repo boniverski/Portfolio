@@ -124,130 +124,6 @@ nav {
     bottom: -50%;
     left: 50%;
     margin-left: -4000px;
-    tran
-@import "rwd-framework";
-
-/*----------------------------------------------
-  DEFAULT STYLE
-----------------------------------------------*/
-* {
-  box-sizing: border-box;
-  font-family: "Roboto";
-  margin: 0;
-  padding: 0;
-}
-
-html, body {
-  height: 100%;
-  margin: 0;
-  color: #333;
-}
-
-h2 {
-  margin-bottom: 1.3em;
-  padding-bottom: 0.2em;
-}
-
-p {
-  text-align: center;
-  line-height: 1.6;
-  max-width: 450px;
-  margin: 0 auto;
-  margin-bottom: 1.5em;
-}
-
-a {
-  text-decoration: none;
-  color: inherit
-}
-
-.section__button {
-  background: none;
-  border: none;
-  border-radius: 4px;
-  padding: 0.5em 2em;
-  font-size: 0.9em;
-  outline: none;
-  &--green {
-    border-left: 2px solid #add356;
-    border-right: 2px solid #00dfa6;
-    background-image: -webkit-linear-gradient(left, #add356, #00dfa6), -webkit-linear-gradient(left, #add356, #00dfa6);
-    background-size: 100% 2px;
-    background-position: 0 100%, 0 0;
-    background-repeat: no-repeat;
-    background-clip: border-box;
-  }
-}
-
-/*----------------------------------------------
-  HEADER
-----------------------------------------------*/
-
-/* NAVIGATION BAR */
-
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: #fff;
-  box-shadow: 0 2px 3px 2px rgba(0,0,0,.15);
-  z-index: 2;
-  ul li {
-    background: none;
-    border: none;
-    height: 3em;
-    padding-top: 1em;
-    transition: all .12s ease-in-out;
-    cursor: pointer;
-    &:hover {
-      box-shadow: inset 0 -4px 0 0 lightgreen;
-    }
-  }
-}
-
-/* HERO SECTION */
-.hero {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  &__intro {
-    width: 100%;
-    margin-bottom: 12em;
-    h1 {
-      font-size: 1.7em;
-      margin: 1.5em 0 0.5em 0;
-    }
-    p { font-size: 1.1em; }
-  }
-}
-
-.top-rect {
-  background: #2ED3EA;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #6C55F7, #2ED3EA);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #6C55F7, #2ED3EA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  padding-top: 550px;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  overflow: hidden;
-  &:after {
-    content: "";
-    display: block;
-    position: absolute;
-    background-color: white;
-    box-shadow: 0 10px 15px 15px rgba(0,0,0,.15);
-    height: 400px;
-    width: 8000px;
-    z-index: 1;
-    bottom: -50%;
-    left: 50%;
-    margin-left: -4000px;
     transform: rotate(-6deg);
   }
 }
@@ -263,20 +139,6 @@ nav {
     align-items: center;
     max-width: 400px;
     margin: 0 auto;
-    button {
-      transition: all .1s ease-in-out;
-      text-transform: uppercase;
-      &:hover {
-        color: white;
-        border-left: 2px solid #add356;
-        border-right: 2px solid #00dfa6;
-        background-image: -webkit-linear-gradient(left, #add356, #00dfa6), -webkit-linear-gradient(left, #add356, #00dfa6);
-        background-size: 100%;
-        background-position: 0 100%, 0 0;
-        background-repeat: no-repeat;
-        background-clip: border-box;
-      }
-    }
 }
 
 /*----------------------------------------------
@@ -315,7 +177,6 @@ figure {
   CONTACT SECTION
 ----------------------------------------------*/
 .contact {
-  padding: 1em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -326,63 +187,5 @@ figure {
     font-size: 1em;
     text-transform: uppercase;
     padding: 0.9em 3em;
-    cursor: pointer;
-  }
-}
-
-
-/*----------------------------------------------
-  FOOTER SECTION
-----------------------------------------------*/
-
-footer {
-  color: lightgray;
-  background: #333;
-  height: auto;
-}
-
-
-.footer__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  .footer__main {
-    text-align: center;
-    margin-top: 2em;
-    .logo {
-      margin-bottom: 0.5em;
-    }
-  }
-  .footer__social {
-    margin: 3em 0;
-  }
-  .footer__social li {
-    font-size: 1.5em;
-    padding: 0.5em;
-  }
-}
-
-.articles {
-  padding-top: 3em;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  h4 {
-    margin-bottom: 1em;
-  }
-  &__date {
-    font-weight: normal;
-    font-size: 0.8em;
-    margin-right: 1.1em;
-  }
-  &__title {
-    color: #add356;
-    &:hover {
-      text-decoration: underline;
-    }
   }
 }
