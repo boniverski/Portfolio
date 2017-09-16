@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,OAAQ;EACP,SAAS,EAAE,GAAG;EACd,SAAE;IACF,SAAS,EAAE,GAAG",
+"sources": ["../scss/components/_sections.scss"],
+"names": [],
+"file": "main.css"
+}
