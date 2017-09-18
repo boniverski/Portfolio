@@ -1,0 +1,55 @@
+/*----------------------------------------------
+  DEFAULT STYLE
+----------------------------------------------*/
+* {
+  box-sizing: border-box;
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  color: #333;
+}
+
+section {
+  margin-bottom: 6em;
+  clear: both;
+  overflow: hidden;
+}
+
+h2 {
+  margin-bottom: 1.3em;
+  padding-bottom: 0.2em;
+}
+
+p {
+  text-align: center;
+  line-height: 1.6;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.section__button {
+  background: none;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5em 2em;
+  font-size: 0.9em;
+  outline: none;
+  border-left: 2px solid #add356;
+  border-right: 2px solid #00dfa6;
+  background-image: -webkit-linear-gradient(left, #add356, #00dfa6), -webkit-linear-gradient(left, #add356, #00dfa6);
+  background-size: 100% 2px;
+  background-position: 0 100%, 0 0;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+}
