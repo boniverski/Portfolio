@@ -211,7 +211,12 @@ nav {
   width: 100%;
   color: white;
   z-index: 2; }
+  nav ul {
+    float: right; }
   nav ul li {
+    width: 60px;
+    margin-right: 1em;
+    display: inline-block;
     background: none;
     border: none;
     height: 3em;
@@ -372,7 +377,8 @@ footer {
     font-size: 0.8em;
     margin: 0 auto 1em auto; }
   .footer__wrapper .footer__social {
-    margin: 2em 3em 0 3em; }
+    margin: 0 auto;
+    max-width: 400px; }
   .footer__wrapper .footer__social li {
     font-size: 1.5em;
     padding: 0.5em;
