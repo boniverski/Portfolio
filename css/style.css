@@ -21,13 +21,6 @@
   justify-content: center;
   align-items: center; }
 
-.inlined {
-  list-style: none;
-  display: flex;
-  justify-content: space-around; }
-  .inlined li {
-    flex: 1 1 0; }
-
 /*------------------ GRID -------------------*/
 /* Small devices (smartphones) */
 @media (min-width: 600px) and (max-width: 767px) {
@@ -295,6 +288,11 @@ nav {
 /*----------------------------------------------
   PROJECTS SECTION
 ----------------------------------------------*/
+.projects {
+  background-image: url(/img/tools.png);
+  background-position: center;
+  background-repeat: repeat; }
+
 .projects__wrapper {
   display: flex;
   justify-content: center;
@@ -380,14 +378,24 @@ footer {
     margin: 0 auto;
     max-width: 400px; }
   .footer__wrapper .footer__social li {
-    font-size: 1.5em;
-    padding: 0.5em;
+    display: inline-block;
+    font-size: 1.6em;
+    padding: 0.5em 0.7em;
     transition: all .3s ease-in-out; }
     .footer__wrapper .footer__social li:hover {
       color: #add356; }
 
+@media (min-width: 768px) {
+  .footer__wrapper--right {
+    margin-top: 4em; }
+    .footer__wrapper--right .footer-info {
+      margin-top: 0.5em; }
+
+  .footer__wrapper--left {
+    margin-bottom: 2em; } }
 .articles {
-  padding-top: 3em;
+  padding-top: 2em;
+  padding-bottom: 1.5em;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
