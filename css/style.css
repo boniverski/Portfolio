@@ -268,14 +268,15 @@ nav {
   font-size: 1.1em;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 700px;
   margin: 0 auto; }
-  .about-me__wrapper button {
+  .about-me__wrapper .section__button {
     transition: all .1s ease-in-out;
     text-transform: uppercase; }
-    .about-me__wrapper button:hover {
+    .about-me__wrapper .section__button:hover {
       color: white;
       border-left: 2px solid #add356;
       border-right: 2px solid #00dfa6;
@@ -289,6 +290,7 @@ nav {
   PROJECTS SECTION
 ----------------------------------------------*/
 .projects {
+  padding: 1em 0 2em 0;
   background-image: url(/img/tools.png);
   background-position: center;
   background-repeat: repeat; }
