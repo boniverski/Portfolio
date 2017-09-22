@@ -222,7 +222,7 @@ nav {
 /* HERO SECTION */
 .hero {
   height: 500px;
-  padding-top: 8em;
+  padding: 8em 1em 0 1em;
   color: white; }
   .hero__intro {
     width: 100%;
