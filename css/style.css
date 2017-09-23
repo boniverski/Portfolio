@@ -233,6 +233,9 @@ nav {
     .hero__intro p {
       font-size: 1.1em; }
 
+@media (min-width: 768px) {
+  .hero {
+    margin-bottom: 8em; } }
 .top-rect {
   background: #2ED3EA;
   /* fallback for old browsers */
@@ -253,12 +256,12 @@ nav {
     position: absolute;
     background-color: white;
     box-shadow: 0 10px 15px 15px rgba(0, 0, 0, 0.15);
-    height: 400px;
-    width: 8000px;
+    height: 200px;
+    width: 6000px;
     z-index: 1;
     bottom: -50%;
     left: 50%;
-    margin-left: -4000px;
+    margin-left: -4700px;
     transform: rotate(-6deg); }
 
 /*----------------------------------------------
