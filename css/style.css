@@ -198,8 +198,13 @@ a {
   HEADER
 ----------------------------------------------*/
 /* NAVIGATION BAR */
+nav * {
+  display: inline-block;
+  margin: 0 1em; }
+
 nav {
   position: absolute;
+  padding: 1em;
   top: 0;
   width: 100%;
   color: white;
@@ -336,6 +341,7 @@ figure {
   padding: 1em;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 700px;
@@ -373,10 +379,6 @@ footer {
     margin-top: 2em; }
     .footer__wrapper .footer-contact .logo {
       margin-bottom: 0.5em; }
-    .footer__wrapper .footer-contact .email {
-      transition: all .3s ease-in-out; }
-      .footer__wrapper .footer-contact .email:hover {
-        color: #add356; }
   .footer__wrapper .footer-info {
     font-size: 0.8em;
     margin: 0 auto 1em auto; }

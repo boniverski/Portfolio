@@ -61,9 +61,14 @@ a {
 ----------------------------------------------*/
 
 /* NAVIGATION BAR */
+nav * {
+  display: inline-block;
+  margin: 0 1em;
+}
 
 nav {
   position: absolute;
+  padding: 1em;
   top: 0;
   width: 100%;
   color: white;
@@ -219,6 +224,7 @@ figure {
   padding: 1em;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 700px;
@@ -262,12 +268,6 @@ footer {
     margin-top: 2em;
     .logo {
       margin-bottom: 0.5em;
-    }
-    .email{
-      transition: all .3s ease-in-out;
-      &:hover {
-        color: #add356;
-      }
     }
   }
   .footer-info {
