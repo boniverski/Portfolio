@@ -12,9 +12,6 @@
   margin-right: auto;
   margin-left: auto; }
 
-.centered {
-  text-align: center; }
-
 .flex-center {
   display: flex;
   flex-wrap: wrap;
@@ -154,6 +151,10 @@
   margin: 0;
   padding: 0; }
 
+h1, h2, h3, h4, h5, h6 {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em; }
+
 html, body {
   height: 100%;
   margin: 0;
@@ -200,11 +201,9 @@ a {
 /* NAVIGATION BAR */
 nav * {
   display: inline-block;
-  margin: 0 1em; }
+  margin: 0.2em; }
 
 nav {
-  position: absolute;
-  padding: 1em;
   top: 0;
   width: 100%;
   color: white;
@@ -212,13 +211,12 @@ nav {
   nav ul {
     float: right; }
   nav ul li {
-    width: 60px;
-    margin-right: 1em;
     display: inline-block;
     background: none;
     border: none;
-    height: 3em;
-    padding-top: 1em;
+    margin-top: 1.5em;
+    margin-right: 1em;
+    padding-bottom: 0.4em;
     transition: all .15s ease-in-out;
     cursor: pointer; }
     nav ul li:hover {
@@ -227,20 +225,35 @@ nav {
 /* HERO SECTION */
 .hero {
   height: 500px;
-  padding: 8em 1em 0 1em;
-  color: white; }
+  padding: 4em 1em 0 1em;
+  color: white;
+  text-align: center; }
   .hero__intro {
     width: 100%;
     margin-bottom: 12em; }
     .hero__intro h1 {
       font-size: 1.7em;
-      margin: 1.5em 0 0.5em 0; }
+      margin: 1.3em 0 0.5em 0; }
     .hero__intro p {
       font-size: 1.1em; }
 
 @media (min-width: 768px) {
+  nav ul {
+    font-size: 1.2em;
+    margin-right: 1.5em; }
+
+  nav .logo {
+    margin-top: 1em;
+    margin-left: 3.5em; }
+
   .hero {
-    margin-bottom: 8em; } }
+    padding: 0;
+    margin-bottom: 8em; }
+    .hero h1 {
+      margin: 1em 0 0.2em 0;
+      font-size: 4em; }
+    .hero p {
+      font-size: 1.5em; } }
 .top-rect {
   background: #2ED3EA;
   /* fallback for old browsers */
@@ -383,6 +396,7 @@ footer {
     font-size: 0.8em;
     margin: 0 auto 1em auto; }
   .footer__wrapper .footer__social {
+    text-align: center;
     margin: 0 auto;
     max-width: 400px; }
   .footer__wrapper .footer__social li {

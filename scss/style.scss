@@ -10,6 +10,11 @@
   padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  -webkit-margin-before:0em;
+  -webkit-margin-after:0em;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -63,12 +68,10 @@ a {
 /* NAVIGATION BAR */
 nav * {
   display: inline-block;
-  margin: 0 1em;
+  margin: 0.2em;
 }
 
 nav {
-  position: absolute;
-  padding: 1em;
   top: 0;
   width: 100%;
   color: white;
@@ -78,13 +81,12 @@ nav {
     float: right;
   }
   ul li {
-    width: 60px;
-    margin-right: 1em;
     display: inline-block;
     background: none;
     border: none;
-    height: 3em;
-    padding-top: 1em;
+    margin-top: 1.5em;
+    margin-right: 1em;
+    padding-bottom: 0.4em;
     transition: all .15s ease-in-out;
     cursor: pointer;
     &:hover {
@@ -96,22 +98,37 @@ nav {
 /* HERO SECTION */
 .hero {
   height: 500px;
-  padding: 8em 1em 0 1em;
+  padding: 4em 1em 0 1em;
   color: white;
+  text-align: center;
   &__intro {
     width: 100%;
     margin-bottom: 12em;
     h1 {
       font-size: 1.7em;
-      margin: 1.5em 0 0.5em 0;
+      margin: 1.3em 0 0.5em 0;
     }
     p { font-size: 1.1em; }
   }
 }
 
 @media (min-width: 768px) {
+  nav ul {
+    font-size: 1.2em;
+    margin-right: 1.5em;
+  }
+  nav .logo {
+    margin-top: 1em;
+    margin-left: 3.5em;
+  }
   .hero {
+    padding: 0;
     margin-bottom: 8em;
+    h1 {
+      margin: 1em 0 0.2em 0;
+      font-size: 4em;
+    }
+    p { font-size: 1.5em; }
   }
 }
 
@@ -275,6 +292,7 @@ footer {
     margin: 0 auto 1em auto;
   }
   .footer__social {
+    text-align: center;
     margin: 0 auto;
     max-width: 400px;
   }
