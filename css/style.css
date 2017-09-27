@@ -6,12 +6,6 @@
   clear: both;
   overflow: hidden; }
 
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto; }
-
 .flex-center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -126,10 +120,6 @@
   margin: 0;
   padding: 0; }
 
-h1, h2, h3, h4, h5, h6 {
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 0em; }
-
 html, body {
   height: 100%;
   margin: 0;
@@ -154,6 +144,11 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer; }
+
+.container {
+  padding: 1em;
+  margin-right: auto;
+  margin-left: auto; }
 
 .section__button {
   background: none;
@@ -263,7 +258,7 @@ nav {
 /*----------------------------------------------
   ABOUT ME SECTION
 ----------------------------------------------*/
-.about-me__wrapper {
+.about__wrapper {
   font-size: 1.1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -280,27 +275,81 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 700px;
+  max-width: 1200px;
   margin: 0 auto; }
-  .about-me__wrapper .section__button {
-    -webkit-transition: all .1s ease-in-out;
-    transition: all .1s ease-in-out;
-    text-transform: uppercase; }
-    .about-me__wrapper .section__button:hover {
-      color: white;
-      border-left: 2px solid #add356;
-      border-right: 2px solid #00dfa6;
-      background-image: -webkit-linear-gradient(left, #add356, #00dfa6), -webkit-linear-gradient(left, #add356, #00dfa6);
-      background-size: 100%;
-      background-position: 0 100%, 0 0;
-      background-repeat: no-repeat;
-      background-clip: border-box; }
+  .about__wrapper .about__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .about__wrapper .about__main .about__services {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .about__wrapper .about__main .about__services div {
+        height: 150px; }
+      .about__wrapper .about__main .about__services p {
+        font-size: 0.8555em;
+        padding: 0 2em; }
+      .about__wrapper .about__main .about__services img {
+        display: block;
+        margin: 0 auto; }
+    .about__wrapper .about__main .about__info {
+      margin: 0 auto;
+      text-align: center; }
+      .about__wrapper .about__main .about__info .section__button {
+        display: inline-block;
+        margin-top: 1em;
+        -webkit-transition: all .1s ease-in-out;
+        transition: all .1s ease-in-out;
+        text-transform: uppercase; }
+        .about__wrapper .about__main .about__info .section__button:hover {
+          color: white;
+          border-left: 2px solid #add356;
+          border-right: 2px solid #00dfa6;
+          background-image: -webkit-linear-gradient(left, #add356, #00dfa6), -webkit-linear-gradient(left, #add356, #00dfa6);
+          background-size: 100%;
+          background-position: 0 100%, 0 0;
+          background-repeat: no-repeat;
+          background-clip: border-box; }
+
+@media (min-width: 992px) {
+  .about__main {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important; }
+    .about__main .about__services {
+      width: 50%;
+      padding: 0 1em; }
+      .about__main .about__services p {
+        font-size: 0.8555em;
+        padding: 1em; }
+    .about__main .about__info {
+      text-align: center;
+      width: 50%;
+      padding-top: 3.5em;
+      padding-left: 1em;
+      padding-right: 2em; }
+      .about__main .about__info p {
+        display: block;
+        margin: 0 auto; } }
 
 /*----------------------------------------------
   PROJECTS SECTION
 ----------------------------------------------*/
 .projects {
-  padding: 1em 0 2em 0;
   background-image: url(/img/tools.png);
   background-position: center;
   background-repeat: repeat; }
@@ -318,8 +367,7 @@ nav {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 1.5em 1em; }
+          flex-direction: column; }
 
 figure {
   display: block;
@@ -353,7 +401,6 @@ figure {
   CONTACT SECTION
 ----------------------------------------------*/
 .contact-wrapper {
-  padding: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

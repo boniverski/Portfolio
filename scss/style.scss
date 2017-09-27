@@ -10,11 +10,6 @@
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  -webkit-margin-before:0em;
-  -webkit-margin-after:0em;
-}
-
 html, body {
   height: 100%;
   margin: 0;
@@ -43,6 +38,12 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+}
+
+.container {
+  padding: 1em;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .section__button {
@@ -163,36 +164,86 @@ nav {
 /*----------------------------------------------
   ABOUT ME SECTION
 ----------------------------------------------*/
-.about-me__wrapper {
+.about__wrapper {
     font-size: 1.1em;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 700px;
+    max-width: 1200px;
     margin: 0 auto;
-    .section__button {
-      transition: all .1s ease-in-out;
-      text-transform: uppercase;
-      &:hover {
-        color: white;
-        border-left: 2px solid #add356;
-        border-right: 2px solid #00dfa6;
-        background-image: -webkit-linear-gradient(left, #add356, #00dfa6), -webkit-linear-gradient(left, #add356, #00dfa6);
-        background-size: 100%;
-        background-position: 0 100%, 0 0;
-        background-repeat: no-repeat;
-        background-clip: border-box;
+    .about__main {
+      display: flex;
+      flex-direction: column;
+      .about__services {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        div {
+          height: 150px;
+        }
+        p {
+          font-size: 0.8555em;
+          padding: 0 2em;
+        }
+        img {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+      .about__info {
+        margin: 0 auto;
+        text-align: center;
+        .section__button {
+          display: inline-block;
+          margin-top: 1em;
+          transition: all .1s ease-in-out;
+          text-transform: uppercase;
+          &:hover {
+            color: white;
+            border-left: 2px solid #add356;
+            border-right: 2px solid #00dfa6;
+            background-image: -webkit-linear-gradient(left, #add356, #00dfa6), -webkit-linear-gradient(left, #add356, #00dfa6);
+            background-size: 100%;
+            background-position: 0 100%, 0 0;
+            background-repeat: no-repeat;
+            background-clip: border-box;
+          }
+        }
       }
     }
 }
 
+@media (min-width: 992px) {
+  .about__main {
+    flex-direction: row !important;
+    .about__services {
+      width: 50%;
+      padding: 0 1em;
+      p {
+        font-size: 0.8555em;
+        padding: 1em;
+      }
+    }
+    .about__info {
+      text-align: center;
+      width: 50%;
+      padding-top: 3.5em;
+      padding-left: 1em;
+      padding-right: 2em;
+      p {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}
 /*----------------------------------------------
   PROJECTS SECTION
 ----------------------------------------------*/
 .projects {
-  padding: 1em 0 2em 0;
   background-image: url(/img/tools.png);
   background-position: center;
   background-repeat: repeat;
@@ -202,7 +253,6 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 1.5em 1em;
 }
 
 figure {
@@ -238,7 +288,6 @@ figure {
   CONTACT SECTION
 ----------------------------------------------*/
 .contact-wrapper {
-  padding: 1em;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
