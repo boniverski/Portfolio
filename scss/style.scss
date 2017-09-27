@@ -65,53 +65,57 @@ a {
 /*----------------------------------------------
   HEADER
 ----------------------------------------------*/
-
-/* NAVIGATION BAR */
-nav * {
-  display: inline-block;
-  margin: 0.2em;
-}
-
-nav {
-  top: 0;
-  width: 100%;
+header {
+  height: 100vh;
+  position: relative;
+  padding: 1em 1em 0 1em;
+  margin-bottom: 2em;
   color: white;
-  //box-shadow: 0 1px 4px 1px rgba(0,0,0,.1);
-  z-index: 2;
-  ul {
-    float: right;
-  }
-  ul li {
-    display: inline-block;
-    background: none;
-    border: none;
-    margin-top: 1.5em;
-    margin-right: 1em;
-    padding-bottom: 0.4em;
-    transition: all .15s ease-in-out;
-    cursor: pointer;
-    &:hover {
-      box-shadow: inset 0 -4px 0 0 lightgreen;
-    }
-  }
-}
-
-/* HERO SECTION */
-.hero {
-  height: 500px;
-  padding: 4em 1em 0 1em;
-  color: white;
-  text-align: center;
-  &__intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #2ED3EA;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6C55F7, #2ED3EA);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6C55F7, #2ED3EA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  nav {
+    position: absolute;
+    top: 0;
     width: 100%;
-    margin-bottom: 12em;
-    h1 {
-      font-size: 1.7em;
-      margin: 1.3em 0 0.5em 0;
+    color: white;
+    z-index: 2;
+    * {
+      display: inline-block;
+      margin: 0.2em;
     }
-    p { font-size: 1.1em; }
+    ul {
+      float: right;
+    }
+    ul li {
+      display: inline-block;
+      background: none;
+      border: none;
+      margin-top: 1.5em;
+      margin-right: 1em;
+      padding-bottom: 0.4em;
+      transition: all .15s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        box-shadow: inset 0 -4px 0 0 lightgreen;
+      }
+    }
   }
 }
+
+.header__intro {
+  h1 {
+    font-size: 1.7em;
+    text-align: center;
+    margin-bottom: 0.2555em;
+  }
+  p { font-size: 1.1em; }
+}
+
 
 @media (min-width: 768px) {
   nav ul {
@@ -122,41 +126,12 @@ nav {
     margin-top: 1em;
     margin-left: 3.5em;
   }
-  .hero {
-    padding: 0;
-    margin-bottom: 8em;
-    h1 {
+  .header__intro {
+    .header__name {
       margin: 1em 0 0.2em 0;
-      font-size: 4em;
+      font-size: 4.8em;
     }
-    p { font-size: 1.5em; }
-  }
-}
-
-.top-rect {
-  background: #2ED3EA;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #6C55F7, #2ED3EA);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #6C55F7, #2ED3EA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  padding-top: 550px;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  overflow: hidden;
-  &:after {
-    content: "";
-    display: block;
-    position: absolute;
-    background-color: white;
-    box-shadow: 0 10px 15px 15px rgba(0,0,0,.15);
-    height: 200px;
-    width: 6000px;
-    z-index: 1;
-    bottom: -50%;
-    left: 50%;
-    margin-left: -4700px;
-    transform: rotate(-6deg);
+    .header__desc { font-size: 1.8em; }
   }
 }
 
@@ -181,12 +156,14 @@ nav {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        margin-top: 4em;
         div {
           height: 150px;
         }
         p {
           font-size: 0.8555em;
-          padding: 0 2em;
+          margin-top: 0.8555em;
+          width: 250px;
         }
         img {
           display: block;
@@ -194,6 +171,7 @@ nav {
         }
       }
       .about__info {
+        max-width: 650px;
         margin: 0 auto;
         text-align: center;
         .section__button {
@@ -216,30 +194,6 @@ nav {
     }
 }
 
-@media (min-width: 992px) {
-  .about__main {
-    flex-direction: row !important;
-    .about__services {
-      width: 50%;
-      padding: 0 1em;
-      p {
-        font-size: 0.8555em;
-        padding: 1em;
-      }
-    }
-    .about__info {
-      text-align: center;
-      width: 50%;
-      padding-top: 3.5em;
-      padding-left: 1em;
-      padding-right: 2em;
-      p {
-        display: block;
-        margin: 0 auto;
-      }
-    }
-  }
-}
 /*----------------------------------------------
   PROJECTS SECTION
 ----------------------------------------------*/

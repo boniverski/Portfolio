@@ -168,46 +168,63 @@ a {
 /*----------------------------------------------
   HEADER
 ----------------------------------------------*/
-/* NAVIGATION BAR */
-nav * {
-  display: inline-block;
-  margin: 0.2em; }
-
-nav {
-  top: 0;
-  width: 100%;
+header {
+  height: 100vh;
+  position: relative;
+  padding: 1em 1em 0 1em;
+  margin-bottom: 2em;
   color: white;
-  z-index: 2; }
-  nav ul {
-    float: right; }
-  nav ul li {
-    display: inline-block;
-    background: none;
-    border: none;
-    margin-top: 1.5em;
-    margin-right: 1em;
-    padding-bottom: 0.4em;
-    -webkit-transition: all .15s ease-in-out;
-    transition: all .15s ease-in-out;
-    cursor: pointer; }
-    nav ul li:hover {
-      -webkit-box-shadow: inset 0 -4px 0 0 lightgreen;
-              box-shadow: inset 0 -4px 0 0 lightgreen; }
-
-/* HERO SECTION */
-.hero {
-  height: 500px;
-  padding: 4em 1em 0 1em;
-  color: white;
-  text-align: center; }
-  .hero__intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #2ED3EA;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#6C55F7), to(#2ED3EA));
+  background: linear-gradient(to right, #6C55F7, #2ED3EA);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  header nav {
+    position: absolute;
+    top: 0;
     width: 100%;
-    margin-bottom: 12em; }
-    .hero__intro h1 {
-      font-size: 1.7em;
-      margin: 1.3em 0 0.5em 0; }
-    .hero__intro p {
-      font-size: 1.1em; }
+    color: white;
+    z-index: 2; }
+    header nav * {
+      display: inline-block;
+      margin: 0.2em; }
+    header nav ul {
+      float: right; }
+    header nav ul li {
+      display: inline-block;
+      background: none;
+      border: none;
+      margin-top: 1.5em;
+      margin-right: 1em;
+      padding-bottom: 0.4em;
+      -webkit-transition: all .15s ease-in-out;
+      transition: all .15s ease-in-out;
+      cursor: pointer; }
+      header nav ul li:hover {
+        -webkit-box-shadow: inset 0 -4px 0 0 lightgreen;
+                box-shadow: inset 0 -4px 0 0 lightgreen; }
+
+.header__intro h1 {
+  font-size: 1.7em;
+  text-align: center;
+  margin-bottom: 0.2555em; }
+
+.header__intro p {
+  font-size: 1.1em; }
 
 @media (min-width: 768px) {
   nav ul {
@@ -216,44 +233,11 @@ nav {
   nav .logo {
     margin-top: 1em;
     margin-left: 3.5em; }
-  .hero {
-    padding: 0;
-    margin-bottom: 8em; }
-    .hero h1 {
-      margin: 1em 0 0.2em 0;
-      font-size: 4em; }
-    .hero p {
-      font-size: 1.5em; } }
-
-.top-rect {
-  background: #2ED3EA;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#6C55F7), to(#2ED3EA));
-  background: linear-gradient(to right, #6C55F7, #2ED3EA);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  padding-top: 550px;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  overflow: hidden; }
-  .top-rect:after {
-    content: "";
-    display: block;
-    position: absolute;
-    background-color: white;
-    -webkit-box-shadow: 0 10px 15px 15px rgba(0, 0, 0, 0.15);
-            box-shadow: 0 10px 15px 15px rgba(0, 0, 0, 0.15);
-    height: 200px;
-    width: 6000px;
-    z-index: 1;
-    bottom: -50%;
-    left: 50%;
-    margin-left: -4700px;
-    -webkit-transform: rotate(-6deg);
-            transform: rotate(-6deg); }
+  .header__intro .header__name {
+    margin: 1em 0 0.2em 0;
+    font-size: 4.8em; }
+  .header__intro .header__desc {
+    font-size: 1.8em; } }
 
 /*----------------------------------------------
   ABOUT ME SECTION
@@ -296,16 +280,19 @@ nav {
               justify-content: center;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center; }
+              align-items: center;
+      margin-top: 4em; }
       .about__wrapper .about__main .about__services div {
         height: 150px; }
       .about__wrapper .about__main .about__services p {
         font-size: 0.8555em;
-        padding: 0 2em; }
+        margin-top: 0.8555em;
+        width: 250px; }
       .about__wrapper .about__main .about__services img {
         display: block;
         margin: 0 auto; }
     .about__wrapper .about__main .about__info {
+      max-width: 650px;
       margin: 0 auto;
       text-align: center; }
       .about__wrapper .about__main .about__info .section__button {
@@ -323,28 +310,6 @@ nav {
           background-position: 0 100%, 0 0;
           background-repeat: no-repeat;
           background-clip: border-box; }
-
-@media (min-width: 992px) {
-  .about__main {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important; }
-    .about__main .about__services {
-      width: 50%;
-      padding: 0 1em; }
-      .about__main .about__services p {
-        font-size: 0.8555em;
-        padding: 1em; }
-    .about__main .about__info {
-      text-align: center;
-      width: 50%;
-      padding-top: 3.5em;
-      padding-left: 1em;
-      padding-right: 2em; }
-      .about__main .about__info p {
-        display: block;
-        margin: 0 auto; } }
 
 /*----------------------------------------------
   PROJECTS SECTION
