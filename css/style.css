@@ -154,7 +154,7 @@ a {
   background: none;
   border: none;
   border-radius: 4px;
-  padding: 0.5em 2em;
+  padding: 0.5em 0;
   font-size: 0.9em;
   outline: none;
   border-left: 2px solid #add356;
@@ -192,7 +192,9 @@ header {
   /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-gradient(linear, left top, right top, from(#6C55F7), to(#2ED3EA));
   background: linear-gradient(to right, #6C55F7, #2ED3EA);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  z-index: 0;
+  overflow: hidden; }
   header nav {
     position: absolute;
     top: 0;
@@ -219,12 +221,17 @@ header {
                 box-shadow: inset 0 -4px 0 0 lightgreen; }
 
 .header__intro h1 {
-  font-size: 1.7em;
+  font-size: 1.8em;
   text-align: center;
   margin-bottom: 0.2555em; }
 
 .header__intro p {
   font-size: 1.1em; }
+
+@media (min-width: 576px) {
+  .header__intro .header__name {
+    margin: 1em 0 0.2em 0;
+    font-size: 2.8em; } }
 
 @media (min-width: 768px) {
   nav ul {
@@ -235,7 +242,7 @@ header {
     margin-left: 3.5em; }
   .header__intro .header__name {
     margin: 1em 0 0.2em 0;
-    font-size: 4.8em; }
+    font-size: 4.1em; }
   .header__intro .header__desc {
     font-size: 1.8em; } }
 
@@ -281,7 +288,7 @@ header {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      margin-top: 4em; }
+      margin-top: 2em; }
       .about__wrapper .about__main .about__services div {
         height: 150px; }
       .about__wrapper .about__main .about__services p {
@@ -293,15 +300,18 @@ header {
         margin: 0 auto; }
     .about__wrapper .about__main .about__info {
       max-width: 650px;
-      margin: 0 auto;
-      text-align: center; }
-      .about__wrapper .about__main .about__info .section__button {
+      margin: 0 auto; }
+    .about__wrapper .about__main .about__buttons {
+      margin: 0 auto; }
+      .about__wrapper .about__main .about__buttons .section__button--green {
         display: inline-block;
-        margin-top: 1em;
+        margin: 1em 1em;
+        text-align: center;
+        width: 9em;
         -webkit-transition: all .1s ease-in-out;
         transition: all .1s ease-in-out;
         text-transform: uppercase; }
-        .about__wrapper .about__main .about__info .section__button:hover {
+        .about__wrapper .about__main .about__buttons .section__button--green:hover {
           color: white;
           border-left: 2px solid #add356;
           border-right: 2px solid #00dfa6;
@@ -381,23 +391,24 @@ figure {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   max-width: 700px;
   margin: 0 auto; }
   .contact-wrapper .contact__button {
-    display: inline;
-    text-align: center;
-    width: 11em;
+    display: inline-block;
     color: white;
     background-size: 100%;
+    margin: 1em 1em;
+    text-align: center;
+    width: 11em;
     font-size: 1em;
     text-transform: uppercase;
     padding: 0.9em 3em;
-    cursor: pointer;
     -webkit-transition: all 0.3s;
     transition: all 0.3s; }
     .contact-wrapper .contact__button:hover {
       -webkit-transform: scale(1.05);
-      transform: scale(1.05); }
+              transform: scale(1.05); }
 
 /*----------------------------------------------
   FOOTER SECTION
