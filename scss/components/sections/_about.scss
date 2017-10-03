@@ -1,0 +1,46 @@
+.about {
+  background-image: url(/images/backgrounds/tools.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  .about-column {
+    .title {
+      font-size: 3rem;
+      margin-bottom: 3rem;
+
+    }
+    .subtitle {
+      font-size: 1.5rem;
+      line-height: 1.75;
+    }
+  }
+  .image-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .image {
+      height: 450px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .about {
+    height: auto;
+    .columns * {display: block; }
+    .columns {
+      flex-direction: column;
+      .about-column { order: 2; };
+      .image-column { order: 1; };
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    height: auto;
+    .columns {
+      display: flex; // Bulma-fix: Ordering columns with image-column first
+    }
+  }
+}

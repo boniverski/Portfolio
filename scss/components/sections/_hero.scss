@@ -1,0 +1,24 @@
+.hero {
+  height: 650px;
+  background-color: #2ED3EA;
+  background-image: url("https://daks2k3a4ib2z.cloudfront.net/58efb1866b0361480e31bb71/5994628820a70b00012ecb4a_bg-pattern-messy-1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  .hero-head .nav {
+    box-shadow: none; // Removes Bulma-defined shadow line
+    padding-top: 1.5rem;
+  }
+  .hero-body {
+    display: flex;
+    align-items: center;
+    .title, .subtitle { color: white; }
+    .title {
+      font-size: 4.5rem;
+      margin-bottom: 2rem;
+    }
+    .subtitle {
+      font-size: 2rem;
+    }
+  }
+}
