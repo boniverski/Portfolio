@@ -83,7 +83,7 @@
     </section>
     <!-- PROJECTS SECTION -->
     <section id="projects" class="section projects full-size">
-      <div class="container">
+      <div id="project-container" class="container">
         <div class="projects-header">
           <h1 class="title">Projects</h1>
           <a class="right-aligned-link" href="#">View All Projects</a>
@@ -108,7 +108,7 @@
             </div>
           </figure>
         </div>
-        <div class="columns">
+        <div id="column-collapse" class="columns is-hidden-mobile">
           <figure class="column project-tile">
             <img class="image" src="https://res.cloudinary.com/boniverski/image/upload/v1472032401/prtfl-img-2_j4z1ar.jpg" alt="">
             <div class="overlay">
@@ -128,6 +128,7 @@
             </div>
           </figure>
         </div>
+        <button id="btn-collapse" class="button is-hidden-ld">Show More</button>
       </div>
     </section>
     <!-- CONTACT SECTION -->
@@ -150,6 +151,7 @@
       </div>
     </section>
 
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
