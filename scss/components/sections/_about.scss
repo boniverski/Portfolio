@@ -2,9 +2,10 @@
   background-image: url(/images/backgrounds/tools.png);
   background-size: cover;
   background-position: 50% 50%;
+  .columns { justify-content: center; align-items: center;}
   .about-column {
     .title {
-      font-size: 3rem;
+      //font-size: 3rem;
       margin-bottom: 3rem;
 
     }
@@ -24,7 +25,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .about {
     height: auto;
     .columns * {display: block; }
@@ -36,11 +37,13 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .about {
     height: auto;
-    .columns {
-      display: flex; // Bulma-fix: Ordering columns with image-column first
+    padding: 0 1.5rem;
+    .about-column {
+      .subtitle { font-size: 1.4rem; }
     }
+    .image-column { padding: 0; }
   }
 }

@@ -5,6 +5,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .right-aligned-link {
+      color: #005276;
+      padding-bottom: 0.5rem; // Separate text and hover line effect
+    }
   }
   .columns {
     .column.project-tile {
@@ -33,14 +37,8 @@
       }
     }
   }
-  // No uniqe Bulma CSS helper for hidding elements on larger screens than tablet
-  .is-hidden-ld {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .projects .is-hidden-ld {
+  .container .button {
     display: block;
+    margin: 0 auto;
   }
 }
