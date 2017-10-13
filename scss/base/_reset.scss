@@ -1,6 +1,7 @@
 body * {
   font-family: 'Varela Round', sans-serif;
 }
+.nav-item img { max-height: 100%;} // Reset Bulma's img height
 .nav-toggle { color: white; }
 .link-hover {
   transition: all .15s ease-in-out;
