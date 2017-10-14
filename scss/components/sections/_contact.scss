@@ -9,6 +9,7 @@
   .contact-info {
     text-align: center;
     .subtitle {
+      line-height: 1.75;
       margin-top: 2rem;
       margin-bottom: 2rem;
       padding: 0 5rem;
@@ -17,11 +18,20 @@
   .contact-buttons {
     text-align: center;
     .button {
-      padding: 0 2rem;
+      padding: 1.7rem 3rem;
     }
   }
 }
 
 .contact-footer {
-  padding-top: 3rem;
+  .footer-social a {
+    color: white;
+    font-size: 1.5rem;
+    padding-bottom: 0.3rem;
+    margin: 0 0.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact .contact-footer { text-align: center;}
 }
