@@ -17,6 +17,17 @@ $(document).ready(function() {
     });
   });
 
+  const $hamburger = $('.nav span.nav-toggle');
+  const $navMenu = $('.nav .nav-right.nav-menu');
+
+  $hamburger.on('click', function() {
+    $navMenu.toggleClass('is-visible');
+    //Toggle button text
+    // $(this).text(function(i, text){
+    //   return text === "Show More" ? "Show Less" : "Show More";
+    // });
+  });
+
 });
 // $(document).ready(function(){
 //   const mqSmall = window.matchMedia( '(max-width: 769px)' );

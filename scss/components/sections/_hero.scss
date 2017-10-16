@@ -51,6 +51,11 @@
     .hero-head .nav {
       padding: 0.5rem 0.9375rem 0 0.9375rem;
       .container { padding: 0; }
+      .nav-menu.nav-right {
+        top: 4rem; // Adds space between header nav and toogle nav
+        border-radius: 0.2rem;
+        .nav-item { color: #363636; justify-content: center; }
+      }
     }
     .hero-body {
       .title { font-size: 2.9rem; }
