@@ -47,14 +47,19 @@
 
 @media screen and (max-width: 768px) {
   .hero {
-    height: 400px;
+    height: 100vh;
     .hero-head .nav {
-      padding: 0.5rem 0.9375rem 0 0.9375rem;
+      margin: .9rem .4rem 0 .4rem;
+      padding: .5rem .9375rem 0 .9375rem;
       .container { padding: 0; }
       .nav-menu.nav-right {
         top: 4rem; // Adds space between header nav and toogle nav
-        border-radius: 0.2rem;
-        .nav-item { color: #363636; justify-content: center; }
+        border-radius: .2rem;
+        * { font-size: 1.2rem; }
+        .nav-item {
+          color: #363636;
+          justify-content: center;
+        }
       }
     }
     .hero-body {
@@ -66,7 +71,7 @@
 
 @media screen and (max-width: 479px) {
   .hero {
-    .hero-head .nav { padding: 0.625rem 0.625rem 0 0.625rem; }
+    .hero-head .nav { padding: .625rem .625rem 0 .625rem; }
     .hero-body {
       .title { font-size: 1.6rem; }
       .subtitle { font-size: 1rem; }

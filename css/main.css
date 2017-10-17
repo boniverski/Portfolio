@@ -73,14 +73,17 @@ body * {
 
 @media screen and (max-width: 768px) {
   .hero {
-    height: 400px; }
+    height: 100vh; }
     .hero .hero-head .nav {
-      padding: 0.5rem 0.9375rem 0 0.9375rem; }
+      margin: .9rem .4rem 0 .4rem;
+      padding: .5rem .9375rem 0 .9375rem; }
       .hero .hero-head .nav .container {
         padding: 0; }
       .hero .hero-head .nav .nav-menu.nav-right {
         top: 4rem;
-        border-radius: 0.2rem; }
+        border-radius: .2rem; }
+        .hero .hero-head .nav .nav-menu.nav-right * {
+          font-size: 1.2rem; }
         .hero .hero-head .nav .nav-menu.nav-right .nav-item {
           color: #363636;
           -webkit-box-pack: center;
@@ -93,7 +96,7 @@ body * {
 
 @media screen and (max-width: 479px) {
   .hero .hero-head .nav {
-    padding: 0.625rem 0.625rem 0 0.625rem; }
+    padding: .625rem .625rem 0 .625rem; }
   .hero .hero-body .title {
     font-size: 1.6rem; }
   .hero .hero-body .subtitle {
@@ -213,7 +216,7 @@ body * {
       line-height: 1.75;
       margin-top: 2rem;
       margin-bottom: 2rem;
-      padding: 0 5rem; }
+      padding: 0 3rem; }
   .contact-header .contact-buttons {
     text-align: center; }
     .contact-header .contact-buttons .button {
