@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "title": "Personal Website",
+      "image": "images/projects/portfolio.png",
+      "tags": ["JavaScript", "JSON", "Bulma CSS", "SCSS"],
+      "link" : "/boniverski.github.io"
+    },
+    {
+      "title": "Twitch.tv Streamers",
+      "image": "images/projects/twitchtv.png",
+      "tags": ["JavaScript", "jQuery", "JSON", "API"],
+      "link" : "/twitch-tv"
+    },
+    {
+      "title": "Pomodoro Clock",
+      "image": "images/projects/pomodoro.png",
+      "tags": ["JavaScript", "jQuery"],
+      "link" : "/pomodoro-clock"
+    },
+    {
+      "title": "Local Weather App",
+      "image": "images/projects/localweather.png",
+      "tags": ["JavaScript", "jQuery", "JSON", "API"],
+      "link" : "/local-weather-app"
+    },
+    {
+      "title": "JS Calculator",
+      "image": "images/projects/calc.png",
+      "tags": ["JavaScript", "jQuery", "Flexbox"],
+      "link" : "/js-calculator"
+    },
+    {
+      "title": "Tic Tac Toe",
+      "image": "images/projects/tictactoe.png",
+      "tags": ["JavaScript", "jQuery", "Flexbox"],
+      "link" : "/tic-tac-toe"
+    }
+  ]
+}
