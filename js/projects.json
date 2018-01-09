@@ -14,25 +14,25 @@
     },
     {
       "title": "Pomodoro Clock",
-      "image": "images/projects/pomodoro.png",
+      "image": "https://boskorabrenovic.me/images/projects/pomodoro.png",
       "tags": ["JavaScript", "jQuery"],
       "link" : "/pomodoro-clock"
     },
     {
       "title": "Local Weather App",
-      "image": "images/projects/localweather.png",
+      "image": "https://boskorabrenovic.me/images/projects/localweather.png",
       "tags": ["JavaScript", "jQuery", "JSON", "API"],
       "link" : "/local-weather-app"
     },
     {
       "title": "JS Calculator",
-      "image": "images/projects/calc.png",
+      "image": "https://boskorabrenovic.me/images/projects/calc.png",
       "tags": ["JavaScript", "jQuery", "Flexbox"],
       "link" : "/js-calculator"
     },
     {
       "title": "Tic Tac Toe",
-      "image": "images/projects/tictactoe.png",
+      "image": "https://boskorabrenovic.me/images/projects/tictactoe.png",
       "tags": ["JavaScript", "jQuery", "Flexbox"],
       "link" : "/tic-tac-toe"
     }
