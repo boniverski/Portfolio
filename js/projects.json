@@ -2,13 +2,13 @@
   "projects": [
     {
       "title": "Personal Website",
-      "image": "images/projects/portfolio.png",
+      "image": "https://boskorabrenovic.me/images/projects/portfolio.png",
       "tags": ["JavaScript", "JSON", "Bulma CSS", "SCSS"],
       "link" : "/boniverski.github.io"
     },
     {
       "title": "Twitch.tv Streamers",
-      "image": "images/projects/twitchtv.png",
+      "image": "https://boskorabrenovic.me/images/projects/twitchtv.png",
       "tags": ["JavaScript", "jQuery", "JSON", "API"],
       "link" : "/twitch-tv"
     },
