@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   // FETCH PROJECT FROM PROJECS.JSON
-  fetch('js/projects.json')
+  fetch('https://boskorabrenovic.me/js/projects.json')
     .then(response => response.json())
     .then(data => {
 
