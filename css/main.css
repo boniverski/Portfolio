@@ -1,5 +1,5 @@
 body * {
-  font-family: 'Varela Round', sans-serif; }
+  font-family: "Varela Round", Helvetica, Arial, sans-serfif; }
 
 .nav-item img {
   max-height: 100%; }
@@ -24,6 +24,12 @@ body * {
 @media screen and (max-width: 768px) {
   .is-visible {
     display: block !important; } }
+
+.is-hidden {
+  display: none; }
+
+.hide-scroll {
+  overflow: hidden; }
 
 .hero {
   height: 750px;
@@ -228,6 +234,32 @@ body * {
     text-align: center; }
     .contact-header .contact-buttons .button {
       padding: 1.7rem 3rem; }
+  .contact-header .contact-modal {
+    visibility: hidden;
+    background-color: white;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    overflow-y: auto; }
+    .contact-header .contact-modal .form-container {
+      max-width: 700px;
+      margin: auto; }
+      .contact-header .contact-modal .form-container form {
+        margin-top: 5rem;
+        display: grid; }
+        .contact-header .contact-modal .form-container form .form-row {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+          .contact-header .contact-modal .form-container form .form-row * {
+            -webkit-box-flex: 1;
+                -ms-flex: 1;
+                    flex: 1; }
+        .contact-header .contact-modal .form-container form .control {
+          margin: .5rem; }
 
 .contact-footer .footer-social a {
   color: white;
@@ -238,3 +270,10 @@ body * {
 @media screen and (max-width: 768px) {
   .contact .contact-footer {
     text-align: center; } }
+
+@media screen and (max-width: 500px) {
+  .contact-modal .form-container .form-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }

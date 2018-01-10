@@ -69,4 +69,15 @@ $(document).ready(function() {
     }
   });
 
+  //SHOW/HIDE CONTACT FORM MODAL
+  $('#contact-toggle-btn').click(function(e) {
+    $('.contact-modal').css('visibility', 'visible');
+    $('html').addClass('hide-scroll');
+    e.stopPropagation();
+  });
+
+  $('#modal-close-btn').click(function() {
+    $('.contact-modal').css('visibility', 'hidden');
+    $('html').removeClass('hide-scroll');
+  });
 });
