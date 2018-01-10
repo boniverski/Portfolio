@@ -71,13 +71,19 @@ $(document).ready(function() {
 
   //SHOW/HIDE CONTACT FORM MODAL
   $('#contact-toggle-btn').click(function(e) {
-    $('.contact-modal').css('visibility', 'visible');
-    $('html').addClass('hide-scroll');
+    $(this).addClass('to-circle');
+    $('.contact-modal').addClass('is-visible-modal');
+    setTimeout(function () {
+      $('html').addClass('hide-scroll');
+    }, 500);
     e.stopPropagation();
   });
 
   $('#modal-close-btn').click(function() {
-    $('.contact-modal').css('visibility', 'hidden');
-    $('html').removeClass('hide-scroll');
+    $('#contact-toggle-btn').removeClass('to-circle');
+    $('.contact-modal').removeClass('is-visible-modal');
+    setTimeout(function () {
+      $('html').removeClass('hide-scroll');
+    }, 400);
   });
 });
