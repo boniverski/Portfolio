@@ -267,7 +267,6 @@ body * {
       border: 2px solid white;
       white-space: nowrap;
       font-size: 1.2rem;
-      text-transform: uppercase;
       background-color: white; }
   .contact-header .contact-modal {
     visibility: hidden;
@@ -280,11 +279,12 @@ body * {
     top: 47%;
     left: 47%;
     -webkit-transition: all .2s 0.4s;
-    transition: all .2s 0.4s; }
+    transition: all .2s 0.4s;
+    z-index: -2; }
     .contact-header .contact-modal * {
       opacity: 0;
-      -webkit-transition: opacity 0.45s 0.6s;
-      transition: opacity 0.45s 0.6s; }
+      -webkit-transition: opacity 0.5s 0.65s;
+      transition: opacity 0.5s 0.65s; }
     .contact-header .contact-modal .form-container {
       max-width: 700px;
       margin: auto; }
@@ -313,8 +313,7 @@ body * {
     text-align: center; } }
 
 @media screen and (max-width: 500px) {
-  .contact-modal .form-container .form-row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; } }
+  .contact-model * {
+    opacity: 0;
+    -webkit-transition: opacity 0.65s 0.7s;
+    transition: opacity 0.65s 0.7s; } }

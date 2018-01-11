@@ -29,7 +29,6 @@
       border: 2px solid white;
       white-space: nowrap;
       font-size: 1.2rem;
-      text-transform: uppercase;
       background-color: white;
     }
   }
@@ -44,7 +43,8 @@
     top: 47%;
     left: 47%;
     transition: all .2s 0.4s;
-    * {opacity: 0; transition: opacity 0.45s 0.6s;}
+    z-index: -2;
+    * {opacity: 0; transition: opacity 0.5s 0.65s;}
     .form-container {
       max-width: 700px;
       margin: auto;
@@ -75,7 +75,5 @@
 }
 
 @media screen and (max-width: 500px) {
-  .contact-modal .form-container .form-row {
-    flex-direction: column;
-  }
+  .contact-model * {opacity: 0; transition: opacity 0.65s 0.7s;}
 }

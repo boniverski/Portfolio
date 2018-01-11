@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   // FETCH PROJECT FROM PROJECS.JSON
-  fetch('https://boskorabrenovic.me/js/projects.json')
+  fetch('http://boskorabrenovic.me/js/projects.json')
     .then(response => response.json())
     .then(data => {
 
@@ -70,7 +70,7 @@ $(document).ready(function() {
   });
 
   //SHOW/HIDE CONTACT FORM MODAL
-  $('#contact-toggle-btn').click(function(e) {
+  $('#contact-form-btn').click(function(e) {
     $(this).addClass('to-circle');
     $('.contact-modal').addClass('is-visible-modal');
     setTimeout(function () {
@@ -80,7 +80,7 @@ $(document).ready(function() {
   });
 
   $('#modal-close-btn').click(function() {
-    $('#contact-toggle-btn').removeClass('to-circle');
+    $('#contact-form-btn').removeClass('to-circle');
     $('.contact-modal').removeClass('is-visible-modal');
     setTimeout(function () {
       $('html').removeClass('hide-scroll');
