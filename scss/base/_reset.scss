@@ -36,7 +36,7 @@ body * { font-family: $main; }
   top: 0 !important;
   border-radius: 0px !important;
   opacity: 1 !important;
-  z-index: 100;
+  z-index: 100 !important;
   visibility: visible !important;
   * { opacity: 1 !important; }
 }
