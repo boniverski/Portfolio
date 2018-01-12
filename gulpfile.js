@@ -21,7 +21,8 @@ gulp.task('sass', function () {
 gulp.task('browser-sync', ['sass'], function() {
     bs.init({
         server: {
-            baseDir: './'
+            baseDir: './',
+            https: true
         }
     });
 });
