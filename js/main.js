@@ -11,7 +11,7 @@ $(document).ready(function() {
       for(id = 0; id < 3; id++) {
         const projectTab = `
                             <figure class="column project-tile">
-                              <img class="image" src=${projects[id].image} alt="Portfolio project">
+                              <img class="image" src="${projects[id].image}" alt="Portfolio project">
                               <div class="overlay">
                                 <h3>${projects[id].title}</h3>
                                 <div>
@@ -28,7 +28,7 @@ $(document).ready(function() {
       for(id = 3; id < 6; id++) {
         const projectTabHidden = `
                             <figure class="column project-tile">
-                              <img class="image" src=${projects[id].image} alt="Portfolio project">
+                              <img class="image" src="${projects[id].image}" alt="Portfolio project">
                               <div class="overlay">
                                 <h3>${projects[id].title}</h3>
                                 <div>
