@@ -12,6 +12,6 @@
     "browser-sync": "*",
     "gulp": "*",
     "gulp-autoprefixer": "*",
-    "gulp-sass": "*"
+    "gulp-sass": "*",
   }
 }

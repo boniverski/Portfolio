@@ -45,5 +45,5 @@ body * { font-family: $main; }
   width: 4rem !important;
   color: transparent !important;
   border-radius: 50% !important;
-  transition: color 0.2s 0s, background-color 0.3s ease-in-out, width 0.3s 0.2s, border-radius 0.1s 0.3s;
+  transition: color .2s 0s, background-color .3s ease-in-out, width .3s .2s, border-radius .1s .3s;
 }
